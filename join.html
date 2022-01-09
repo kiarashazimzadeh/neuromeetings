@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <div class="container-fluid p-0 bg-white sticky-top">
+    <div class="container-fluid p-0 bg-white">
       <div class="container-md">
         <nav
           class="navbar flex-wrap navbar-expand-lg navbar-light p-3 border-bottom"
@@ -199,6 +199,14 @@
     </div>
 
     <div class="container-md">
+      <button
+        onclick="topFunction()"
+        id="backtotop"
+        class="btn ms-auto shadow-none fs-3 fixed-bottom z"
+        style="display: none"
+      >
+        <i class="bi bi-arrow-up-circle-fill"></i>
+      </button>
       <footer class="mt-5 mb-3">
         <ul
           class="nav justify-content-start align-items-center lh-1 border-top"
@@ -347,6 +355,31 @@
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
       });
+    </script>
+
+    <!-- Back to top -->
+    <script>
+      mybutton = document.getElementById("backtotop");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
     </script>
   </body>
 </html>
