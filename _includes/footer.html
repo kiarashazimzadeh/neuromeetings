@@ -1,9 +1,12 @@
 <div class="container-md">
     <footer class="mt-5 mb-3">
         {% if page.url != '/' %}
-        <ul class="nav justify-content-start align-items-center border-top">
+        <ul class="nav justify-content-start align-items-center lh-1 border-top">
             <span class="text-secondary fw-bold">Quick access:</span>
             {% for item in site.data.menu %}
+            {% if item.url == null %}
+                {% continue %}
+            {% endif %}
             <li class="nav-item"><a href="{% if item.external == true  %}{{ item.url }}{% else %}{{ item.url | prepend: site.url }}{% endif %}"{% if item.external == true %} target="_blank"{% endif %} class="nav-link px-2 text-muted fs-5"><i class="bi {{item.icon}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{item.title}}"></i></a></li>
             {% endfor %}
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted fs-5"><i class="bi bi-telegram" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Telegram channel"></i></a></li>
