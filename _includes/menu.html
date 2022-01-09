@@ -1,0 +1,16 @@
+<div class="row justify-content-center mt-5 px-lg-5 text-center">
+    {% for item in site.data.menu %}
+    {% if item.title == 'Home' %}
+    {% continue %}
+    {% endif %}
+    {% if item.url == null %}
+    {% continue %}
+    {% endif %}
+    <div class="col-4 col-lg-2 mb-3 mb-lg-0">
+        <a class="link-secondary text-decoration-none" href="{% if item.external == true  %}{{ item.url }}{% else %}{{ item.url | prepend: site.url }}{% endif %}"{% if item.external == true %} target="_blank"{% endif %}>
+            <i class="bi {{item.icon}} fs-1"></i>
+            <div class="fw-bold">{{item.title}}</div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
