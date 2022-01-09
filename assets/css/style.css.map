@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"style.scss",
+		"_sass/neuromeetings.scss"
+	],
+	"sourcesContent": [
+		"@import\n    \"neuromeetings\";",
+		"::-webkit-scrollbar {\n    width: 5px;\n}\n::-webkit-scrollbar-track {\n    background: #f8f9fa;\n}\n::-webkit-scrollbar-thumb {\n    background: #6c757d;\n}\n::-webkit-scrollbar-thumb:hover {\n    background: #212529;\n}"
+	],
+	"names": [],
+	"mappings": "ECAE,AAAF,iBAAmB,CAAC,EAChB,KAAK,EAAE,GAAG,GACb;;EACC,AAAF,uBAAyB,CAAC,EACtB,UAAU,EAAE,OAAO,GACtB;;EACC,AAAF,uBAAyB,CAAC,EACtB,UAAU,EAAE,OAAO,GACtB;;EACC,AAAF,uBAAyB,CAAC,KAAK,CAAC,EAC5B,UAAU,EAAE,OAAO,GACtB"
+}
