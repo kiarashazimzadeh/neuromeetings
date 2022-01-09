@@ -10,6 +10,11 @@ jobs:
   jekyll:
     runs-on: ubuntu-latest
     steps:
+      - name: Image Actions
+        uses: calibreapp/image-actions@1.1.0
+        with:
+          github_token: ${{ secrets.jekyll }}
+
       - name: 📂 setup
         uses: actions/checkout@v2
       - name: 💎 ruby
