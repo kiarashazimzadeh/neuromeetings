@@ -74,7 +74,7 @@
 
                     <li class="nav-item">
                       <a
-                        class="nav-link link-secondary bg-light rounded-3 px-3 py-2 text-center disabled text-primary"
+                        class="nav-link link-secondary bg-light rounded-3 px-3 py-2 text-center"
                         href="https://neuromeetings.ir/sign-up.html"
                       >
                         <i class="bi bi-person-plus-fill fs-5"></i>
@@ -141,30 +141,32 @@
       </div>
     </div>
 
-    <div class="container-md px-4">
+    <div class="container-md px-5">
       <h1 class="display-5 my-5 text-center">Sign-up</h1>
 
       <div
-        class="row flex-column-reverse flex-lg-row mt-5 mb-3 justify-content-lg-evenly"
+        class="row flex-column-reverse flex-lg-row justify-content-lg-evenly"
       >
-        <div class="col-12">
+        <div class="col">
           <div class="text-center">
             <img
               src="assets/img/form.png"
               class="img-fluid"
               width="400px"
-              alt=""
+              alt="Sign-up"
             />
+
+            <p>
+              Fill this form to sign up for the meetings and we'll contact you
+              as soon as possible.
+            </p>
           </div>
-          <p>
-            Fill this form to sign up for the meetings and we'll contact you as
-            soon as possible.
-          </p>
+
           <form
             class="row mb-3 needs-validation justify-content-center"
             id="form"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdUkg_eS9MNEuwxdH-geFnUIv5r4h_v4LrgP-IugNj4__v9Mg/formResponse"
-            novalidate
+            novalidate=""
           >
             <div class="col-12 col-md-6 p-1">
               <div class="form-floating">
@@ -174,7 +176,7 @@
                   id="firs-name"
                   placeholder="Mohammad"
                   pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"
-                  required
+                  required=""
                   name="entry.691620484"
                 />
                 <label for="firs-name">First name</label>
@@ -191,7 +193,7 @@
                   id="last-name"
                   placeholder="Mohammadi"
                   pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"
-                  required
+                  required=""
                   name="entry.771608105"
                 />
                 <label for="last-name">Last name</label>
@@ -208,7 +210,7 @@
                   id="email"
                   placeholder="name@example.com"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  required
+                  required=""
                   name="entry.819637256"
                 />
                 <label for="email"
@@ -225,7 +227,7 @@
                   id="phone-number"
                   placeholder="+989131112233"
                   pattern="09\d{9}"
-                  required
+                  required=""
                   name="entry.1984722826"
                 />
                 <label for="phone-number"
@@ -244,7 +246,7 @@
                   id="background"
                   placeholder="name@example.com"
                   rows="3"
-                  required
+                  required=""
                   name="entry.259299195"
                 ></textarea>
                 <label for="background">Background</label>
@@ -259,15 +261,21 @@
                   id="interests"
                   placeholder="name@example.com"
                   rows="3"
-                  required
+                  required=""
                   name="entry.898511114"
                 ></textarea>
                 <label for="interests">Interests</label>
                 <div class="invalid-feedback">This cannot be empty.</div>
               </div>
             </div>
-            <div class="col text-center">
-              <input type="submit" class="btn btn-secondary" value="Sign-up" />
+            <div class="col-12 p-1">
+              <div class="col text-center">
+                <input
+                  type="submit"
+                  class="btn btn-secondary"
+                  value="Sign-up"
+                />
+              </div>
             </div>
           </form>
           <div
@@ -296,7 +304,9 @@
         <p class="text-center text-muted">
           &copy; 2022 Isfahan Neuropsychiatry Center
           <br />
-          Isfahan University of Medical Sciences, Isfahan, Iran.
+          Isfahan University of Medical Sciences
+          <br />
+          Isfahan, Iran
         </p>
       </footer>
     </div>
