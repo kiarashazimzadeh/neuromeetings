@@ -1,16 +1,15 @@
-<div class="row justify-content-center mt-5 px-lg-5 text-center">
+<ul class="nav gap-1 justify-content-center">
     {% for item in site.data.menu %}
-    {% if item.title == 'Home' %}
+    {% if page.url == '/' %}
+    {% if item.url == '/' %}
     {% continue %}
     {% endif %}
-    {% if item.url == null %}
-    {% continue %}
     {% endif %}
-    <div class="col-4 col-lg-2 mb-3 mb-lg-0">
-        <a class="link-secondary text-decoration-none" href="{% if item.external == true  %}{{ item.url }}{% else %}{{ item.url | prepend: site.url }}{% endif %}"{% if item.external == true %} target="_blank"{% endif %}>
-            <i class="bi {{item.icon}} fs-1"></i>
+    <li class="nav-item">
+        <a class="nav-link link-secondary bg-light rounded-3 px-3 py-2 text-center{% if item.url == null %} disabled{% endif %}{% if item.url == page.url %} disabled text-primary{% endif %}" href="{% if item.external == true  %}{{ item.url }}{% else %}{{ item.url | prepend: site.url }}{% endif %}"{% if item.external == true %} target="_blank"{% endif %}>
+            <i class="bi {{item.icon}} fs-{{include.size}}"></i>
             <div class="fw-bold">{{item.title}}</div>
         </a>
-    </div>
+    </li>
     {% endfor %}
-</div>
+</ul>
