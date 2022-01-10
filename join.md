@@ -4,9 +4,8 @@ title: Join
 thumbnail:
 description: >-
     Every wednesday
-permalink: /join
 ---
-<div class="row flex-column-reverse flex-lg-row mt-5 mb-3 justify-content-lg-evenly">
+<div class="row flex-column-reverse flex-lg-row justify-content-lg-evenly">
     <div class="col-lg-7 d-flex flex-column justify-content-center">
         <h1 class="fw-bold lh-1">Participate remotely</h1>
         <p class="fs-4 lead">

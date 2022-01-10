@@ -4,7 +4,6 @@ title: Sign-up
 thumbnail: assets/img/form.png
 description: >-
     Fill this form to sign up for the meetings and we'll contact you as soon as possible.
-permalink: /sign-up
 ---
 
 <form class="row mb-3 needs-validation justify-content-center" id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdUkg_eS9MNEuwxdH-geFnUIv5r4h_v4LrgP-IugNj4__v9Mg/formResponse" novalidate>
@@ -29,9 +28,9 @@ permalink: /sign-up
     <div class="col-12 col-md-6 p-1">                    
         <div class="form-floating">
             <input type="text" class="form-control" id="email" placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required name="entry.819637256">
-            <label for="email">Email address (e.g., example@gmail.com)</label>
+            <label for="email">Email address</label>
             <div class="invalid-feedback">
-                Enter your email correctly.
+                Enter your email address correctly.
             </div>
         </div>
     </div>                

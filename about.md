@@ -1,7 +1,6 @@
 ---
 layout: single
 title: About
-permalink: /about
 ---
 ### <i class="fa-solid fa-road"></i> Our way up here
 Isfahan Neuroscience Meetings were established in 2016 in Isfahan Neuropsychiatry Center, at Ayatollah Kashani Hospital located in Isfahan, Iran and the participants were M. Barekatain (neuropsychiatrist), H. Mohammadbeigi (psychiatrist), F. Rajabi (neuropsychiatrist) and F. Faghani (psychiatrist). The main focus of earlier meetings were new findings about the neural basis of human cognitive functions and brain changes in psychiatric and neurological disorders. Over time, more experts and students with different backgrounds participated in the meetings and the topics were extended beyond Cognitive Neuroscience to include Neuroimaging, Computational Psychiatry, and Machine Learning. After almost 70 meetings, there was a one-year hiatus due to Covid-19 pandemic from late 2020 till the end of 2021, but once again, from January 2022, the meetings are held consistently, every week, on wednesdays.
