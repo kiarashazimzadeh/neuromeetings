@@ -4,11 +4,24 @@
 {% include head.html %}
 {% include header.html %}
 
-<div class="container-md px-4">
-    <h1 class="display-5 my-5 text-center">{{ page.title }}</h1>
+<div class="container-md px-5">
+    <h1 class="display-5 my-5 text-center">Sign-up</h1>
     
-    <div class="row flex-column-reverse flex-lg-row mt-5 mb-3 justify-content-lg-evenly">
-        <div class="col-12">
+    <div class="row flex-column-reverse flex-lg-row justify-content-lg-evenly">
+        <div class="col">
+            {% if page.thumbnail != null or page.description != null %}
+            <div class="text-center">
+
+                {% if page.thumbnail != null %}
+                <img src="{{page.thumbnail}}" class="img-fluid" width="400px" alt="{{page.title}}">
+                {% endif %}
+
+                {% if page.description != null %}
+                <p>Fill this form to sign up for the meetings and we'll contact you as soon as possible.</p>
+                {% endif %}
+                
+            </div>
+            {% endif %}
             {{ content }}
         </div>
     </div>
