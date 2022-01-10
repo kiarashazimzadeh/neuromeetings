@@ -1,0 +1,18 @@
+<div class="row">
+    {% if include.url != null %}
+    <a href="{{include.url}}">
+        {% endif %}
+        <img src="{{include.src}}" class="figure-img rounded" height="{{include.height}}" alt="">
+        <figcaption class="figure-caption">
+            {{include.caption}}
+            {% if include.source != null %}
+            <br>
+            <a class="link-secondary" href="{{include.source_url}}">
+                <cite title="{{include.source}}">{{include.source}}</cite>
+            </a>
+            {% endif %}
+        </figcaption>
+        {% if include.url != null %}
+    </a>
+    {% endif %}
+</div>

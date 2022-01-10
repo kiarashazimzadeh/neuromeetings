@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col text-center">
+        <figure class="figure">
+            <div class="w-100">
+                {{include.iframe}}
+            </div>
+            <figcaption class="figure-caption">
+                {{include.caption}}
+                {% if include.source != null %}
+                <br>
+                <a class="link-secondary" href="{{include.source_url}}">
+                    <cite title="{{include.source}}">{{include.source}}</cite>
+                </a>
+                {% endif %}
+            </figcaption>
+        </figure>
+    </div>
+</div>
